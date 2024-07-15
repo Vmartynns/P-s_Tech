@@ -1,16 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import TasksPage from './pages/TasksPage';
+import TeamsPage from './pages/TeamsPage';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      <h1>
-        Projeto Pós Tech - Tech Challenge Grupo C
-      </h1>
-      </header>
-    </div> 
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/tasks">
+            <TasksPage />
+          </Route>
+          <Route path="/teams">
+            <TeamsPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
