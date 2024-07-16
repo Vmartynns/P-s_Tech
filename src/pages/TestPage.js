@@ -41,6 +41,7 @@ function TestPage() {
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <Link to="/"><button> HomePage</button></Link>
     </div>
   );
 }

@@ -9,6 +9,7 @@ const HomePage = () => {
       
     <Link to="/teams"><button>Teams Page</button></Link>
     <Link to="/tasks"><button>Tasks Page</button></Link>
+    <Link to="/test"><button>Firebase Page</button></Link>
 
     </div>
   );
